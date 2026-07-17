@@ -71,7 +71,7 @@ export function TravelSection() {
             <div className={`relative bg-cream ${set.featured ? 'aspect-[4/3]' : 'aspect-square'}`}>
               <img src={set.image || '/placeholder.svg'} alt={set.alt} className="h-full w-full object-cover" />
               {set.featured && (
-                <span className="absolute top-3 left-3 rounded-full bg-coral px-3 py-1 text-xs font-semibold text-white">
+                <span className="absolute top-3 left-3 rounded-full bg-coral px-3 py-1 text-sm font-semibold text-white">
                   Featured
                 </span>
               )}

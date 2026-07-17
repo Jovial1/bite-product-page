@@ -17,7 +17,7 @@ export function IngredientsSection() {
   return (
     <section id="ingredients" className="bg-cream py-12">
       <div className="mx-auto max-w-2xl px-5">
-        <p className="text-xs font-semibold tracking-[0.2em] text-coral uppercase">High Quality Ingredients</p>
+        <p className="text-sm font-semibold tracking-[0.2em] text-coral uppercase">High Quality Ingredients</p>
         <h2 className="mt-2 font-display text-3xl font-extrabold tracking-tight text-balance text-navy">
           Never made with bad ingredients
         </h2>

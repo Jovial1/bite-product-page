@@ -17,32 +17,32 @@ const REVIEWS: Review[] = [
     alt: 'Smiling man brushing his teeth with a Bite bamboo toothbrush',
   },
   {
-    quote: 'One bite a day keeps my teeth and the planet clean.',
-    name: 'Roya Shirin',
-    location: 'Honolulu',
-    image: '/images/toothpaste-bits-demo.png',
-    alt: 'Woman holding a Bite toothpaste bit between her teeth',
+    quote: '100% sustainable & cruelty free is the way to be.',
+    name: 'Taejong Yi',
+    location: 'Seattle',
+    image: '/images/toothbrush-headshot.png',
+    alt: 'Young man smiling while holding a Bite bamboo toothbrush',
   },
   {
-    quote: '100% sustainable & cruelty free is the way to be.',
-    name: 'Kim Seterah',
-    location: 'Los Angeles',
-    image: '/images/floss-demo.png',
-    alt: 'Woman flossing her teeth and smiling',
+    quote: 'These bites help me look good and feel good.',
+    name: 'Melody Truman',
+    location: 'Austin',
+    image: '/images/mouthwash-demo.png',
+    alt: 'Blonde woman smiling after using Bite mouthwash',
   },
   {
     quote: 'I like the convenience of 4 months supply in one small jar.',
     name: 'Paris Nazanin',
     location: 'Miami',
-    image: '/images/bits-duo.png',
-    alt: 'Bite toothpaste bits duo set',
+    image: '/images/mouthwash-product.png',
+    alt: 'Small Bite mouthwash jar holding a multi-month supply of bits',
   },
   {
-    quote: 'No harsh chemicals, this mouthwash is a game changer. Swish swish.',
-    name: 'Yasmin Arezou',
-    location: 'San Diego',
-    image: '/images/mouthwash-demo.png',
-    alt: 'Woman swishing Bite mouthwash with a glass of water',
+    quote: 'One bite a day keeps my teeth and the planet clean.',
+    name: 'Roya Shirin',
+    location: 'Honolulu',
+    image: '/images/toothpaste-bits-demo.png',
+    alt: 'Woman holding a Bite toothpaste bit between her teeth',
   },
 ]
 
@@ -60,7 +60,7 @@ export function ReviewsSection() {
   return (
     <section id="reviews" className="bg-cream py-12">
       <div className="mx-auto max-w-2xl px-5">
-        <p className="text-xs font-semibold tracking-[0.2em] text-coral uppercase">One Million Reviews</p>
+        <p className="text-sm font-semibold tracking-[0.2em] text-coral uppercase">One Million Reviews</p>
         <h2 className="mt-2 font-display text-3xl font-extrabold tracking-tight text-navy">
           Loved by happy mouths
         </h2>
@@ -86,7 +86,7 @@ export function ReviewsSection() {
               </blockquote>
               <footer className="mt-4">
                 <p className="font-display text-sm font-bold text-navy">{review.name}</p>
-                <p className="text-xs text-navy/55">{review.location}</p>
+                <p className="text-sm text-navy/70">{review.location}</p>
               </footer>
             </div>
           </article>

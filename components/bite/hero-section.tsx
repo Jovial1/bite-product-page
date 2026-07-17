@@ -2,7 +2,7 @@ export function HeroSection() {
   return (
     <section id="top" className="bg-cream">
       <div className="mx-auto max-w-2xl px-5 pt-8 pb-10 text-center">
-        <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-coral uppercase">
+        <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-coral uppercase">
           Berry Twist · Naturally Whitening
         </p>
         <h1 className="font-display text-4xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-5xl">
