@@ -9,7 +9,7 @@ export function HowItWorksSection() {
     <section id="how-it-works" className="bg-background py-12">
       <div className="mx-auto max-w-2xl px-5">
         <h2 className="font-display text-3xl font-extrabold tracking-tight text-navy">How it works</h2>
-        <p className="mt-1 text-sm text-navy/60">Brushing with bits is easy.</p>
+        <p className="mt-1 text-sm text-navy">Brushing with bits is easy.</p>
 
         <div className="mt-5 overflow-hidden rounded-3xl bg-cream">
           <img
@@ -26,7 +26,7 @@ export function HowItWorksSection() {
                 {step.number}
               </span>
               <h3 className="mt-3 font-display text-base font-bold text-navy">{step.title}</h3>
-              <p className="mt-1 text-sm leading-relaxed text-navy/65">{step.copy}</p>
+              <p className="mt-1 text-sm leading-relaxed text-navy">{step.copy}</p>
             </li>
           ))}
         </ol>
