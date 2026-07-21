@@ -65,17 +65,10 @@ export function ReviewsSection() {
           Loved by happy mouths
         </h2>
       </div>
-      <div
-        className="no-scrollbar mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 focus-visible:ring-2 focus-visible:ring-navy focus-visible:outline-none"
-        role="list"
-        aria-label="Customer reviews"
-        tabIndex={0}
-      >
+      <div className="no-scrollbar mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 focus-visible:ring-2 focus-visible:ring-navy focus-visible:outline-none" role="region" aria-label="Customer reviews" tabIndex={0}>
         {REVIEWS.map((review) => (
-          <div role="listitem" key={review.name} className="contents">
-          <article
-            className="flex w-[78%] max-w-xs shrink-0 snap-start flex-col overflow-hidden rounded-3xl border border-border bg-background"
-          >
+          <div key={review.name} className="contents">
+          <article className="flex w-[78%] max-w-xs shrink-0 snap-start flex-col overflow-hidden rounded-3xl border border-border bg-background">
             <div className="aspect-[4/3] bg-cream">
               <img src={review.image || '/placeholder.svg'} alt={review.alt} className="h-full w-full object-cover" />
             </div>
