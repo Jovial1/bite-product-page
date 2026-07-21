@@ -20,14 +20,14 @@ export function FreeGiftSection() {
     <section className="bg-background py-12">
       <div className="mx-auto max-w-2xl px-5">
         <div className="rounded-3xl bg-coral p-6 text-center text-white">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold">
+          <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-semibold text-coral">
             <Gift className="size-4" />
             Free with $100 purchase
           </span>
           <h2 className="mt-3 font-display text-2xl font-extrabold tracking-tight text-balance">
             Spend $100, pick a freebie on us
           </h2>
-          <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-white/85">
+          <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-white">
             Add your favorites to the bag and one of these goodies is yours, absolutely free.
           </p>
 
@@ -43,7 +43,7 @@ export function FreeGiftSection() {
                 </div>
                 <div className="p-3 text-left">
                   <h3 className="font-display text-sm font-bold text-navy">{gift.name}</h3>
-                  <p className="mt-0.5 text-xs leading-relaxed text-navy/60">{gift.note}</p>
+                  <p className="mt-0.5 text-xs leading-relaxed text-navy">{gift.note}</p>
                 </div>
               </article>
             ))}
