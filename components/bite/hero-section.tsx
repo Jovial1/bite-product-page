@@ -9,7 +9,7 @@ export function HeroSection() {
           <span className="block text-navy">Small bites.</span>
           <span className="block text-coral">Big impact.</span>
         </h1>
-        <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-navy/70">
+        <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-navy">
           Naturally sweet berry toothpaste tablets that clean deeply and protect the planet!
         </p>
 
@@ -21,7 +21,7 @@ export function HeroSection() {
           />
         </div>
 
-        <a
+        
           href="#favorites"
           className="mt-2 inline-flex min-h-12 items-center justify-center rounded-full border-2 border-coral bg-background px-10 text-base font-semibold text-coral transition-colors hover:bg-coral hover:text-white focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:outline-none"
         >
