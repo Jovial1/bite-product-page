@@ -21,10 +21,7 @@ export function HeroSection() {
           />
         </div>
 
-        
-          href="#favorites"
-          className="mt-2 inline-flex min-h-12 items-center justify-center rounded-full border-2 border-coral bg-background px-10 text-base font-semibold text-coral transition-colors hover:bg-coral hover:text-white focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:outline-none"
-        >
+        <a href="#favorites" className="mt-2 inline-flex min-h-12 items-center justify-center rounded-full border-2 border-coral bg-background px-10 text-base font-semibold text-coral transition-colors hover:bg-coral hover:text-white focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:outline-none">
           Shop Now
         </a>
       </div>
