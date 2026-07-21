@@ -33,13 +33,13 @@ export function SocialFooter() {
         <h2 className="mt-7 text-center font-display text-2xl font-extrabold tracking-tight text-balance">
           Follow us for a chance to <span className="text-coral">WIN</span> a free Bamboo Toothbrush Set
         </h2>
-        <p className="mx-auto mt-2 max-w-sm text-center text-sm leading-relaxed text-white/70">
+        <p className="mx-auto mt-2 max-w-sm text-center text-sm leading-relaxed text-white/85">
           Like us on all our social media and join the giveaway. New winner picked every month!
         </p>
 
         <div className="mt-6 flex justify-center gap-3">
           {SOCIALS.map(({ label, Icon, href }) => (
-            <a
+            
               key={label}
               href={href}
               aria-label={`Follow Bite on ${label}`}
@@ -77,11 +77,11 @@ export function SocialFooter() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@email.com"
                 autoComplete="email"
-                className="min-h-12 flex-1 rounded-full border border-white/25 bg-white/5 px-5 text-base text-white placeholder:text-white/45 focus-visible:border-coral focus-visible:ring-2 focus-visible:ring-coral focus-visible:outline-none"
+                className="min-h-12 flex-1 rounded-full border border-white/25 bg-white/5 px-5 text-base text-white placeholder:text-white/70 focus-visible:border-coral focus-visible:ring-2 focus-visible:ring-coral focus-visible:outline-none"
               />
               <button
                 type="submit"
-                className="min-h-12 rounded-full bg-coral px-6 font-semibold text-white transition-colors hover:bg-coral/90 focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:ring-offset-navy focus-visible:outline-none"
+                className="min-h-12 rounded-full bg-coral px-6 font-semibold text-white transition-colors hover:brightness-90 focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:ring-offset-navy focus-visible:outline-none"
               >
                 Sign Up
               </button>
@@ -90,10 +90,10 @@ export function SocialFooter() {
         </form>
 
         <div className="mt-10 border-t border-white/15 pt-6 text-center">
-          <p className="font-display text-xl font-extrabold">
+          <p className="font-display text-base font-semibold">
             bite<span className="text-coral">.</span>me
           </p>
-          <p className="mt-2 text-xs text-white/50">
+          <p className="mt-2 text-xs text-white/75">
             © {new Date().getFullYear()} Bite. Sustainable oral care, made for people and the planet.
           </p>
         </div>
