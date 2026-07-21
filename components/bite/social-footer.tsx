@@ -18,16 +18,8 @@ export function SocialFooter() {
     <footer className="bg-navy pt-12 pb-10 text-white">
       <div className="mx-auto max-w-2xl px-5">
         <div className="grid grid-cols-2 gap-3">
-          <img
-            src="/images/toothbrush-product.png"
-            alt="Bite bamboo toothbrush set"
-            className="aspect-square w-full rounded-3xl bg-cream object-contain p-3"
-          />
-          <img
-            src="/images/hero-berry-jar.png"
-            alt="Bite Berry Twist toothpaste bits jar with berries"
-            className="aspect-square w-full rounded-3xl bg-cream object-contain p-3"
-          />
+          <img src="/images/toothbrush-product.png" alt="Bite bamboo toothbrush set" className="aspect-square w-full rounded-3xl bg-cream object-contain p-3" />
+          <img src="/images/hero-berry-jar.png" alt="Bite Berry Twist toothpaste bits jar with berries" className="aspect-square w-full rounded-3xl bg-cream object-contain p-3" />
         </div>
 
         <h2 className="mt-7 text-center font-display text-2xl font-extrabold tracking-tight text-balance">
@@ -45,13 +37,7 @@ export function SocialFooter() {
           ))}
         </div>
 
-        <form
-          className="mx-auto mt-8 max-w-sm"
-          onSubmit={(e) => {
-            e.preventDefault()
-            if (email.trim()) setSubmitted(true)
-          }}
-        >
+        <form className="mx-auto mt-8 max-w-sm" onSubmit={(e) => { e.preventDefault(); if (email.trim()) setSubmitted(true) }}>
           <label htmlFor="newsletter-email" className="mb-2 block text-sm font-medium text-white/80">
             Get 15% off your first order
           </label>
@@ -61,16 +47,7 @@ export function SocialFooter() {
             </p>
           ) : (
             <div className="flex flex-col gap-2 sm:flex-row">
-              <input
-                id="newsletter-email"
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@email.com"
-                autoComplete="email"
-                className="min-h-12 flex-1 rounded-full border border-white/25 bg-white/5 px-5 text-base text-white placeholder:text-white/70 focus-visible:border-coral focus-visible:ring-2 focus-visible:ring-coral focus-visible:outline-none"
-              />
+              <input id="newsletter-email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@email.com" autoComplete="email" className="min-h-12 flex-1 rounded-full border border-white/25 bg-white/5 px-5 text-base text-white placeholder:text-white/70 focus-visible:border-coral focus-visible:ring-2 focus-visible:outline-none" />
               <button type="submit" className="min-h-12 rounded-full bg-coral px-6 font-semibold text-white transition-colors hover:brightness-90 focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:ring-offset-navy focus-visible:outline-none">
                 Sign Up
               </button>
@@ -81,3 +58,12 @@ export function SocialFooter() {
         <div className="mt-10 border-t border-white/15 pt-6 text-center">
           <p className="font-display text-base font-semibold">
             bite<span className="text-coral">.</span>me
+          </p>
+          <p className="mt-2 text-xs text-white/75">
+            © {new Date().getFullYear()} Bite. Sustainable oral care, made for people and the planet.
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
