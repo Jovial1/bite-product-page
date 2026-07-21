@@ -23,7 +23,7 @@ export function SocialFooter() {
         </div>
 
         <h2 className="mt-7 text-center font-display text-2xl font-extrabold tracking-tight text-balance">
-          Follow us for a chance to <span className="text-coral">WIN</span> a free Bamboo Toothbrush Set
+          Follow us for a chance to <span className="text-[#ff8a85]">WIN</span> a free Bamboo Toothbrush Set
         </h2>
         <p className="mx-auto mt-2 max-w-sm text-center text-sm leading-relaxed text-white/85">
           Like us on all our social media and join the giveaway. New winner picked every month!
@@ -56,8 +56,8 @@ export function SocialFooter() {
         </form>
 
         <div className="mt-10 border-t border-white/15 pt-6 text-center">
-          <p className="font-display text-base font-semibold">
-            bite<span className="text-coral">.</span>me
+          <p className="font-display text-sm font-normal">
+            bite<span className="text-[#ff8a85]">.</span>me
           </p>
           <p className="mt-2 text-xs text-white/75">
             © {new Date().getFullYear()} Bite. Sustainable oral care, made for people and the planet.
