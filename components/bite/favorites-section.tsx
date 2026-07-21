@@ -62,26 +62,17 @@ function FavoriteCard({ fav }: { fav: Favorite }) {
         </span>
         {fav.product && (
           <div className="absolute right-3 bottom-3 flex size-20 items-center justify-center overflow-hidden rounded-2xl border border-border bg-background/95 p-1.5 shadow-sm">
-            <img
-              src={fav.product || '/placeholder.svg'}
-              alt={fav.productAlt}
-              className="h-full w-full object-contain"
-            />
+            <img src={fav.product || '/placeholder.svg'} alt={fav.productAlt} className="h-full w-full object-contain" />
           </div>
         )}
       </div>
       <div className="flex flex-1 flex-col p-4">
         <h3 className="font-display text-lg font-bold text-navy">{fav.name}</h3>
         <p className="mt-1 flex-1 text-sm leading-relaxed text-navy">{fav.benefit}</p>
-        <button
-          type="button"
-          className="mt-4 flex min-h-11 items-center justify-center gap-2 rounded-full bg-coral px-4 font-semibold text-white transition-colors hover:brightness-90 focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:outline-none"
-        >
+        <button type="button" className="mt-4 flex min-h-11 items-center justify-center gap-2 rounded-full bg-coral px-4 font-semibold text-white transition-colors hover:brightness-90 focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:outline-none">
           <ShoppingBag className="size-4" />
           Add to Bag
-          <span className="mx-1 text-white/75" aria-hidden="true">
-            |
-          </span>
+          <span className="mx-1 text-white/75" aria-hidden="true">|</span>
           <span className="sr-only">for</span>${fav.price}
         </button>
       </div>
@@ -96,14 +87,9 @@ export function FavoritesSection() {
         <h2 className="font-display text-3xl font-extrabold tracking-tight text-navy">Our favorites</h2>
         <p className="mt-1 text-sm text-navy">Swipe to explore the daily routine.</p>
       </div>
-      <div
-        className="no-scrollbar mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 focus-visible:ring-2 focus-visible:ring-navy focus-visible:outline-none"
-        role="list"
-        aria-label="Favorite products"
-        tabIndex={0}
-      >
+      <div className="no-scrollbar mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 focus-visible:ring-2 focus-visible:ring-navy focus-visible:outline-none" role="region" aria-label="Favorite products" tabIndex={0}>
         {FAVORITES.map((fav) => (
-          <div role="listitem" key={fav.name} className="contents">
+          <div key={fav.name} className="contents">
             <FavoriteCard fav={fav} />
           </div>
         ))}
