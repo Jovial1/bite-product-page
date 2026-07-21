@@ -55,7 +55,7 @@
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --navy: oklch(0.31 0.083 264);
-  --coral: oklch(0.66 0.185 26);
+  --coral: #c73f3a;
   --cream: oklch(0.97 0.012 90);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
