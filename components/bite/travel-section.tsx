@@ -55,19 +55,10 @@ export function TravelSection() {
         </h2>
         <p className="mt-1 text-sm text-white/80">Plastic-free routines that fit in your carry-on.</p>
       </div>
-      <div
-        className="no-scrollbar mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
-        role="list"
-        aria-label="Travel sets"
-        tabIndex={0}
-      >
+      <div className="no-scrollbar mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none" role="region" aria-label="Travel sets" tabIndex={0}>
         {TRAVEL_SETS.map((set) => (
-          <div role="listitem" key={set.name} className="contents">
-          <article
-            className={`flex shrink-0 snap-start flex-col overflow-hidden rounded-3xl bg-background ${
-              set.featured ? 'w-[85%] max-w-sm' : 'w-[72%] max-w-xs'
-            }`}
-          >
+          <div key={set.name} className="contents">
+          <article className={`flex shrink-0 snap-start flex-col overflow-hidden rounded-3xl bg-background ${set.featured ? 'w-[85%] max-w-sm' : 'w-[72%] max-w-xs'}`}>
             <div className={`relative bg-cream ${set.featured ? 'aspect-[4/3]' : 'aspect-square'}`}>
               <img src={set.image || '/placeholder.svg'} alt={set.alt} className="h-full w-full object-cover" />
               {set.featured && (
@@ -82,10 +73,7 @@ export function TravelSection() {
                 <span className="font-display text-lg font-bold text-coral">${set.price}</span>
               </div>
               <p className="mt-1 flex-1 text-sm leading-relaxed text-navy">{set.description}</p>
-              <button
-                type="button"
-                className="mt-4 flex min-h-11 items-center justify-center rounded-full border-2 border-navy px-4 font-semibold text-navy transition-colors hover:bg-navy hover:text-white focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 focus-visible:outline-none"
-              >
+              <button type="button" className="mt-4 flex min-h-11 items-center justify-center rounded-full border-2 border-navy px-4 font-semibold text-navy transition-colors hover:bg-navy hover:text-white focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 focus-visible:outline-none">
                 Add to Bag
               </button>
             </div>
