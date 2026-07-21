@@ -66,14 +66,14 @@ export function ReviewsSection() {
         </h2>
       </div>
       <div
-        className="no-scrollbar mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2"
+        className="no-scrollbar mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 focus-visible:ring-2 focus-visible:ring-navy focus-visible:outline-none"
         role="list"
         aria-label="Customer reviews"
+        tabIndex={0}
       >
         {REVIEWS.map((review) => (
+          <div role="listitem" key={review.name} className="contents">
           <article
-            role="listitem"
-            key={review.name}
             className="flex w-[78%] max-w-xs shrink-0 snap-start flex-col overflow-hidden rounded-3xl border border-border bg-background"
           >
             <div className="aspect-[4/3] bg-cream">
@@ -81,15 +81,16 @@ export function ReviewsSection() {
             </div>
             <div className="flex flex-1 flex-col p-4">
               <Stars />
-              <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-navy/80">
+              <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-navy">
                 &ldquo;{review.quote}&rdquo;
               </blockquote>
               <footer className="mt-4">
                 <p className="font-display text-sm font-bold text-navy">{review.name}</p>
-                <p className="text-sm text-navy/70">{review.location}</p>
+                <p className="text-sm text-navy">{review.location}</p>
               </footer>
             </div>
           </article>
+          </div>
         ))}
         <div className="w-1 shrink-0" aria-hidden="true" />
       </div>
